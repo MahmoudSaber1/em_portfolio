@@ -18,14 +18,14 @@ const Skills = () => {
                         <div
                             key={skill.name}
                             className="flex flex-col items-center gap-5 h-full">
-                            <div className="h-[20rem] w-[5rem] rounded-t-full bg-white relative">
+                            <div className="h-[14rem] w-[3rem] md:h-[20rem] md:w-[5rem] rounded-t-full bg-white relative">
                                 <div
                                     style={{
                                         height: `${skill.level}`,
                                     }}
                                     className="absolute bottom-0 w-full bg-primary"></div>
                             </div>
-                            <h3 className="text-2xl font-bold">{skill.name}</h3>
+                            <h3 className="text-xl md:text-2xl font-bold">{skill.name}</h3>
                         </div>
                     );
                 })}

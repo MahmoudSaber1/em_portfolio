@@ -27,7 +27,7 @@ const Navbar = () => {
                         <Link
                             key={link.name}
                             href={`${link.href}`}
-                            className={`uppercase text-2xl font-bold ${isActive ? "text-primary" : "text-white"}`}>
+                            className={`uppercase text-xl md:text-2xl font-bold ${isActive ? "text-primary" : "text-white"}`}>
                             {link.name}
                         </Link>
                     );
