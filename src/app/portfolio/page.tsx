@@ -1,15 +1,11 @@
-import Image from "next/image";
-
-import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
-import Skills from "@/components/Skills";
-import Tools from "@/components/Tools";
-import Help from "@/components/Help";
+import Image from "next/image";
+import React from "react";
 
-export default function Home() {
+const Portfolio = () => {
     return (
         <main className="min-h-screen bg-black text-white relative">
-            <div className="size-full absolute z-0 -top-[74rem] md:-top-[55rem] lg:-top-[20rem]">
+            <div className="w-full h-full absolute z-0 -top-[50rem] md:-top-[7rem] lg:-top-[8rem]">
                 <Image
                     src={"/my_photo.svg"}
                     fill
@@ -19,12 +15,11 @@ export default function Home() {
             </div>
             <div className="relative z-10 px-10 md:px-20">
                 <Navbar />
-                <Hero />
-                <Skills />
-                <Tools />
-                <Help />
+                <div className="h-screen"></div>
             </div>
             <h1 className="text-8xl font-bold text-center py-20">Thank You</h1>
         </main>
     );
-}
+};
+
+export default Portfolio;
